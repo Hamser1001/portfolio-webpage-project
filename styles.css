@@ -28,9 +28,7 @@ body {
     position: fixed;
     top: 0;
     background: rgba(19, 19, 19, 1);
-
     width: 100%;
-
 }
 
 .header {
@@ -41,7 +39,6 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
     padding: 18px 0;
     box-sizing: border-box;
     z-index: 1000;
@@ -172,7 +169,8 @@ nav ul li {
     align-items: center;
     /* height: 91%; */
     max-height: 500px;
-    /* width: 90%; */
+    width: 90%;
+    padding-left: 10px;
 }
 
 .rectangle {
@@ -303,7 +301,7 @@ nav ul li {
     border-radius: 12px;
     background: rgba(19, 19, 19, 1);
     padding: 15px;
-    height: 170px;
+    height: 100%;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -393,14 +391,12 @@ nav ul li {
 }
 
 .project-tile {
-
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     /* border: 1px solid blue; */
     box-sizing: border-box;
-
 }
 
 .project {
@@ -517,7 +513,7 @@ nav ul li {
     padding: 40px 0;
     color: var(--white-color);
     font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     /* width: 53.88rem; */
     width: 92%;
 
@@ -564,7 +560,130 @@ nav ul li:hover {
 
 
 .features-logo:hover {
-
     background-color: #363636;
+}
 
+
+.features-text p:hover,
+#profile-link p:hover,
+.agency-name:hover {
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+#footer-container ul li a:hover,
+#footer-note:hover {
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+.logo-text:hover {
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+.green-b:hover {
+    color: white;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    #welcome-section {
+        height: 400px;
+        /* border: 1px solid white; */
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .agency-name {
+        font-size: 1.5rem;
+    }
+
+    .agency-description {
+        font-size: 0.7rem;
+    }
+
+    .features-text p {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .features {
+        max-width: 53.88rem;
+        width: 91%;
+        height: 16rem;
+    }
+
+    .features-logo img {
+        width: 70%;
+    }
+
+    .right-side,
+    .left-side {
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        margin: 0 8px;
+    }
+
+    .project {
+        width: 30%;
+        height: 90%;
+        margin: 7px;
+        box-sizing: border-box;
+        /* border: 1px solid white; */
+        overflow: hidden;
+    }
+
+
+    .project h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: large;
+        /* font-family: Creato Display; */
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    #contact-us-section {
+        width: 91%;
+        height: 60vh;
+        margin: 15px 50px;
+    }
+
+
+
+    .marketing-section .field {
+        grid-area: auto !important;
+    }
+
+    .marketing-section {
+        height: 900px;
+        width: 91%;
+        padding: 15px;
+        margin-top: 20px;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+    }
 }
