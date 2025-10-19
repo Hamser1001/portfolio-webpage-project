@@ -684,6 +684,13 @@ nav ul li:hover {
         grid-row-gap: 10px;
 
     }
+
+    #projects {
+
+        height: auto;
+        padding: 14px;
+        margin: 14px;
+    }
 }
 
 
