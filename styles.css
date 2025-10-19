@@ -588,7 +588,7 @@ nav ul li:hover {
 
 @media (min-width: 500px) and (max-width: 1024px) {
     #welcome-section {
-        height: 400px;
+        height: 100vh;
         /* border: 1px solid white; */
     }
 
@@ -848,5 +848,21 @@ nav ul li:hover {
     .features-text p {
         font-size: 1.4rem;
     }
+}
 
+
+
+.ham-menu {
+    background: rgba(19, 19, 19, 1);
+    width: 500px;
+}
+
+@media (max-width: 375px) {
+    .header {
+        /* display: none; */
+    }
+}
+
+.ham-menu {
+    display: none;
 }
