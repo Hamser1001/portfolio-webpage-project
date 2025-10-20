@@ -588,7 +588,7 @@ nav ul li:hover {
 
 @media (min-width: 500px) and (max-width: 1024px) {
     #welcome-section {
-        height: 100vh;
+        height: 600px;
         /* border: 1px solid white; */
     }
 
