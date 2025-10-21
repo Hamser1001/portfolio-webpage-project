@@ -112,7 +112,7 @@ nav ul li {
 }
 
 #welcome-section {
-    max-height: calc(100vh - 4rem);
+    /* max-height: calc(100vh - 4rem); */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -121,6 +121,7 @@ nav ul li {
     width: 91%;
     max-width: 53.88rem;
     height: 100vh;
+    max-height: 600px;
     margin-top: 4rem;
     background-image: url("assets/hero-background.svg");
     background-repeat: no-repeat;
@@ -178,17 +179,6 @@ nav ul li {
     z-index: -1;
 }
 
-/* .half-circle {
-    position: absolute;
-    background-image: url('assets/Intersection 5.svg');
-    border: 1px solid white; 
-    height: 248.97px;
-    width: 125px;
-    background-repeat: no-repeat;
-    transform: rotate(180deg);
-    margin-left: 200px;
-    z-index: -1;
-} */
 
 .features {
     max-width: 53.88rem;
