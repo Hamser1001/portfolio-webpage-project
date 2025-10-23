@@ -7,7 +7,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* CODE CHECKED*/
 body {
     display: flex;
     flex-direction: column;
